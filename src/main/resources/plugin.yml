@@ -1,0 +1,33 @@
+name: FloresiaCore
+version: '${project.version}'
+main: molky.floresiacore.FloresiaCoreMain
+api-version: 1.19
+authors: [ Molky, Hazoxy ]
+commands:
+  plugins:
+    description: Listes des plugins.
+    permission: floresia.plugins
+    aliases: [ pl, plugins ]
+  rename:
+    description: Sert à renommer un item
+    aliases: [rename, rnm]
+    permission: floresia.rename.name
+    permission-message: §6Floresia §e>> Tu n'as pas la permission.
+    usage: §6/rename <§eNOM§6>
+
+  addlore:
+    description: Sert à ajouter un lore
+    aliases: [lore, loreadd]
+    permission: floresia.rename.lore
+    permission-message: §6Floresia §e>> Tu n'as pas la permission.
+    usage: §6/addlore <§eLORE§6>
+  ss:
+    description: Menu de modération
+    aliases: [mod, menumod]
+    permission: floresia.ss.menu
+    permission-message: §6Floresia §e>> Tu n'as pas la permission.
+  rtp:
+    description: Téléportation aléatoire.
+    aliases: [randomtp, randomteleport]
+  molky:
+    description: Aucune.
