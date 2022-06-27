@@ -13,6 +13,9 @@ public class CommandManager {
         registerCommand("rename", new CommandRename());
         registerCommand("rtp", new CommandRtp());
         registerCommand("plugins", new CommandPlugins());
+        registerCommand("shop", new CommandShop());
+        registerCommand("infos", new CommandInfo());
+        registerCommand("boutique", new CommandBoutique());
 
     }
 

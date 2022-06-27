@@ -34,7 +34,7 @@ public class CommandRtp implements CommandExecutor {
 
     public void initializeItems() {
         for(int i = 0;i < 9; i++) {
-            inv.setItem(i, GuiController.createGuiItem(Material.STAINED_GLASS_PANE, " ", 1));
+            inv.setItem(i, GuiController.createGuiItem(Material.STAINED_GLASS_PANE, "§e" + FloresiaMessages.etoile + " " + "§6FloresiaTP" + " " + "§e" + FloresiaMessages.etoile , 1));
         }
         inv.setItem(1, GuiController.createGuiItem(Material.WOOL, "§6Téléportation Proche", 5, "§6Téléporation entre §eX §6et §ex Blocs"));
         inv.setItem(4, GuiController.createGuiItem(Material.WOOL, "§6Téléportation Moyenne", 1, "§6Téléporation entre §eX §6et §ex Blocs"));

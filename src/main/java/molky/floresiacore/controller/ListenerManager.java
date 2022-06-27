@@ -1,11 +1,8 @@
 package molky.floresiacore.controller;
 
 import molky.floresiacore.FloresiaCoreMain;
-import molky.floresiacore.listener.InventoryListener;
-import molky.floresiacore.listener.MessageListener;
-import molky.floresiacore.listener.PlaceBlockListener;
+import molky.floresiacore.listener.*;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
 public class ListenerManager {
     private final static FloresiaCoreMain pl = FloresiaCoreMain.getInstance();
@@ -14,7 +11,10 @@ public class ListenerManager {
         registerEvent(new InventoryListener());
         registerEvent(new MessageListener());
         registerEvent(new PlaceBlockListener());
-
+        registerEvent(new InventoryShopListener());
+        registerEvent(new PlayerJoinListener());
+        registerEvent(new InventoryInfoListener());
+        registerEvent(new InventoryBoutiqueListener());
     }
 
     private static void registerEvent(Listener listener) {

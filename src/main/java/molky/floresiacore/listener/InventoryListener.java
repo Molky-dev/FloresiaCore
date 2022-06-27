@@ -29,6 +29,7 @@ public class InventoryListener implements Listener {
         Player p = (Player) event.getWhoClicked();
         HashMap<String, Integer> i = new HashMap<>();
         ItemStack is = event.getCurrentItem();
+
         if (is != null && is.getType() == Material.SKULL_ITEM && event.getInventory().getName().equals("§6Modération")) {
             event.setCancelled(true);
             s = (SkullMeta) event.getCurrentItem().getItemMeta();

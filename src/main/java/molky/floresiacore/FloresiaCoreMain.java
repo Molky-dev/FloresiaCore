@@ -2,6 +2,7 @@ package molky.floresiacore;
 
 import molky.floresiacore.controller.CommandManager;
 import molky.floresiacore.controller.ListenerManager;
+import molky.floresiacore.controller.ScoreboardController;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,7 +15,7 @@ public final class FloresiaCoreMain extends JavaPlugin {
         System.out.println("FloresiaCore ON");
         CommandManager.setup();
         ListenerManager.setup();
-
+        ScoreboardController.setup();
     }
 
     @Override

@@ -31,3 +31,9 @@ commands:
     aliases: [randomtp, randomteleport]
   molky:
     description: Aucune.
+  shop:
+    description: Voici le shop
+  infos:
+    description: Les informations.
+  boutique:
+    description: La boutique.
